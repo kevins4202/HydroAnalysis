@@ -4,15 +4,18 @@ from datetime import datetime
 import os
 import re
 import requests
+from random import randint
 
 #Import dataframe of all 26,000 papers and all keywords/buzzwords
-papers = pd.read_csv(os.getcwd().replace('scripts/old', 'data/papers') + '/final_valid_papers.csv')
-kwords = pd.read_csv(os.getcwd().replace('scripts/old', 'data')+'/technical_buzzwords.csv')
+papers = pd.read_csv(os.getcwd().replace('scripts', 'data/papers') + '/final_valid_papers.csv')
+kwords = pd.read_csv(os.getcwd().replace('scripts', 'data')+'/technical_buzzwords.csv')
 
 # make the dataframe store words as a list instead of long string
 words = pd.DataFrame(columns = ['topic', 'keywords'])
 for i in range(kwords.shape[0]):
-    words.loc[len(words.index)] = [kwords.iat[i,0], kwords.iat[i,1].split(", ")]
+    words.loc[len(words.index)] = [str(kwords.iat[int(i),0]), str (kwords.iat[int(i),1]).split(", ")]
+
+# print(kwords)
 
 #API KEYS
 keys = [
@@ -73,6 +76,8 @@ def find_keywords(k_list, abstract):
         if cnt != 0:
             #append number of topics found and the specific keyword
             ret.append([word,cnt])
+
+            # print([word, cnt])
     
     return ret#returns the specific word & context
 
@@ -83,7 +88,7 @@ def cleaning(tmp): #PREPROCESS FULL TEXT
     #remove URLs
 #     tmp = re.sub(r'(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))', '', str)
     #remove punctuations
-    tmp = re.sub(r'[^\w]|_','',tmp)
+    tmp = re.sub(r'[^\w]|_',' ',tmp)
     #to lowercase
     tmp = tmp.lower()
     #Remove additional white spaces
@@ -163,12 +168,19 @@ def fullText(i, keyi):
         return None
 
 #RUN!!!!!!!!!!!!!!!!!!!  
+error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
-    ft = fullText(i, keyi)
+    if i%1500==0 and i !=0:
+        error_df.to_csv(os.getcwd().replace('HydroAnalysis/scripts', 'error_df.csv'), index = False)
+        error_df_i+=1
+        error_df = pd.DataFrame(columns = ["index", "doi"])
+
+    # print(i)
+    ft = fullText(i = i, keyi = keyi)
     
     if ft == None:
-        continue
+        error_df.loc[len(error_df.index)] = [i,papers.iat[i,4]]
 #     print(ft)
     for j in range(words.shape[0]):
         subterms = words.iat[j, 1]
@@ -176,6 +188,5 @@ for i in range(papers.shape[0]):
         for found in find_keywords(subterms, ft):
             buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
 
-buzzwords_found.to_csv(os.getcwd().replace('scripts', 'found_buzzwords.csv'))
-error_df.to_csv(os.getcwd().replace('scripts', 'error_full_text.csv'))
-full_text_df.to_csv('text_corpus.csv')
+buzzwords_found.to_csv('found_buzzwords.csv', index = False)
+error_df.to_csv('error_full_text.csv', index = False)

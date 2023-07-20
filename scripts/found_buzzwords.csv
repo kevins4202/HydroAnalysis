@@ -1,0 +1,60 @@
+index,doi,buzz_id,category,subword,count
+15000,10.1016/j.watres.2023.119770,0,AI and Machine Learning,regression,5
+15000,10.1016/j.watres.2023.119770,7,Modeling,simulation,1
+15000,10.1016/j.watres.2023.119770,19,Data Mining,classification,1
+15000,10.1016/j.watres.2023.119770,20,Predictive Analysis,data analysis,1
+15000,10.1016/j.watres.2023.119770,28,Software/Platform/Infrastructure as a Service,containers,5
+15000,10.1016/j.watres.2023.119770,29,Web Applications,database,1
+15001,10.1016/j.watres.2023.119780,7,Modeling,modeling,6
+15001,10.1016/j.watres.2023.119780,7,Modeling,simulation,6
+15001,10.1016/j.watres.2023.119780,7,Modeling,model calibration,6
+15001,10.1016/j.watres.2023.119780,7,Modeling,model analysis,1
+15001,10.1016/j.watres.2023.119780,7,Modeling,model parameters,25
+15001,10.1016/j.watres.2023.119780,7,Modeling,model results,2
+15001,10.1016/j.watres.2023.119780,19,Data Mining,overfitting,1
+15002,10.1016/j.watres.2023.119777,3,IoT,environmental monitoring,1
+15002,10.1016/j.watres.2023.119777,10,5G,5g,2
+15002,10.1016/j.watres.2023.119777,20,Predictive Analysis,data analysis,1
+15002,10.1016/j.watres.2023.119777,23,Smart Cities,environmental monitoring,1
+15003,10.1016/j.watres.2023.119794,2,Blockchain and Cryptocurrency,block,1
+15003,10.1016/j.watres.2023.119794,3,IoT,real time monitoring,1
+15003,10.1016/j.watres.2023.119794,5,Cybersecurity,siem,1
+15003,10.1016/j.watres.2023.119794,7,Modeling,simulation,4
+15003,10.1016/j.watres.2023.119794,23,Smart Cities,real time monitoring,1
+15004,10.1016/j.watres.2023.119789,13,Data Analytics,statistical analysis,1
+15004,10.1016/j.watres.2023.119789,14,Biotechnology,biotechnology,3
+15004,10.1016/j.watres.2023.119789,14,Biotechnology,gene expression,7
+15004,10.1016/j.watres.2023.119789,14,Biotechnology,cloning,1
+15004,10.1016/j.watres.2023.119789,14,Biotechnology,bioengineering,1
+15004,10.1016/j.watres.2023.119789,15,Nanotechnology,nanoparticle,6
+15005,10.1016/j.watres.2023.119796,0,AI and Machine Learning,regression,2
+15005,10.1016/j.watres.2023.119796,14,Biotechnology,biomarker,9
+15005,10.1016/j.watres.2023.119796,14,Biotechnology,bioreactors,5
+15005,10.1016/j.watres.2023.119796,20,Predictive Analysis,data analysis,2
+15005,10.1016/j.watres.2023.119796,29,Web Applications,php,3
+15006,10.1016/j.watres.2023.119785,0,AI and Machine Learning,regression,25
+15006,10.1016/j.watres.2023.119785,2,Blockchain and Cryptocurrency,block,1
+15006,10.1016/j.watres.2023.119785,7,Modeling,model results,2
+15006,10.1016/j.watres.2023.119785,13,Data Analytics,statistical analysis,1
+15006,10.1016/j.watres.2023.119785,20,Predictive Analysis,data analysis,1
+15007,10.1016/j.watres.2023.119813,1,Big Data,data processing,1
+15007,10.1016/j.watres.2023.119813,13,Data Analytics,statistical analysis,1
+15007,10.1016/j.watres.2023.119813,14,Biotechnology,bioinformatics,1
+15007,10.1016/j.watres.2023.119813,29,Web Applications,database,2
+15008,10.1016/j.watres.2023.119805,1,Big Data,data quality,1
+15008,10.1016/j.watres.2023.119805,2,Blockchain and Cryptocurrency,block,1
+15008,10.1016/j.watres.2023.119805,9,Quantum Computing,qubit,4
+15008,10.1016/j.watres.2023.119805,10,5G,sdn,2
+15008,10.1016/j.watres.2023.119805,13,Data Analytics,data quality,1
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,biotechnology,2
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,bioinformatics,1
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,genomics,7
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,proteomics,10
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,metagenomics,7
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,microbiology,2
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,cloning,1
+15008,10.1016/j.watres.2023.119805,14,Biotechnology,proteomics,10
+15008,10.1016/j.watres.2023.119805,19,Data Mining,classification,3
+15008,10.1016/j.watres.2023.119805,20,Predictive Analysis,data analysis,2
+15008,10.1016/j.watres.2023.119805,29,Web Applications,database,13
+15009,10.1016/j.watres.2023.119797,13,Data Analytics,statistical analysis,2
