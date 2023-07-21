@@ -70,9 +70,12 @@ def find_keywords(k_list, abstract):
                 c_orig = c_orig[found_i + len(word):]
 
             except ValueError:
+                # print("DONE")
                 #if cannot find then we are done
                 done = True
                 continue
+            except Exception as e:
+                break
         if cnt != 0:
             #append number of topics found and the specific keyword
             ret.append([word,cnt])
@@ -159,11 +162,13 @@ def fullText(i, keyi):
     except Exception as e:
         if js.status_code == 404:
             error_df.loc[len(error_df.index)] = [i,doi]
+            print("NOT FOUND")
         elif js.status_code ==429:
-            print(str(e))
+            print("KEY ERROR")
             keyi+=1
             return fullText(i, (keyi)%9)
         else:
+            print("OTHER ERROR")
             error_df.loc[len(error_df.index)] = [i,doi]
         return None
 
@@ -172,7 +177,7 @@ error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
     if i%1500==0 and i !=0:
-        error_df.to_csv(os.getcwd().replace('HydroAnalysis/scripts', 'error_df.csv'), index = False)
+        error_df.to_csv(os.getcwd().replace('scripts', 'error_df'+str(error_df_i)+'.csv'), index = False)
         error_df_i+=1
         error_df = pd.DataFrame(columns = ["index", "doi"])
 
