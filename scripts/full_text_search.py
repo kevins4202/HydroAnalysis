@@ -19,70 +19,70 @@ for i in range(kwords.shape[0]):
 
 #API KEYS
 keys = [
-    "17ca4a831e62a9479b79d3185e2bb7c9",
-    "8136f24479fb8bd24432478e10d5d69c",
-    "f907ed21538230d82be259a24df59042",
-    "e7fb9860807a25abf5ae0b287f32a5cc",
-    "78f68de19035f872bcc55fd70705b427",
-    "7baf5abc97d978fee2bc4120305aedcb",
-    "b31320020fca70a856a402ee7e02ec9b",
-    "d39d7f9cb431a873853066d351bc2c4f",
-    "0ec3c0ffd88e2da0a35b43d8248b8e21"
+    "d0c39572282257204e73e16476da7d80",
+    "9cd9459f5f9679f35f791efa0146f3f7",
+    "4fed3a6ea82674610dc37e597f4c1b1c",
+    "d6808e44f5904f1fd9a01e0404f56bc1",
+    "146b970d412eaae2851db7c51d2a731b",
+    "48e96520d3ddbb4c4abc45ad6b0421d6",
+    "4e23a40cfe1ab144604586aae4c42565",
+    "4b32aea068998554f30a282f965c271e",
+    "a1e7378d4d1046a8fa9bbf1750d480a4"
 ]
 
 #find keywords in paper full text
-def find_keywords(k_list, abstract):
-    ret = [] # all instances of found buzzwords
+# def find_keywords(k_list, abstract):
+#     ret = [] # all instances of found buzzwords
     
-    old_abstract = abstract
+#     old_abstract = abstract
     
-    orig = old_abstract
+#     orig = old_abstract
     
-    #loop thru all buzzwords
-    for word in k_list:
-        word = word.lower().replace('-', ' ')
-        curr_abstract = old_abstract
-        c_orig = orig
-        done = False
-        cnt = 0
-        while(True):
-            if done:
-                break
-            try:
-                #try to find word
-                found_i = curr_abstract.index(word)
+#     #loop thru all buzzwords
+#     for word in k_list:
+#         word = word.lower().replace('-', ' ')
+#         curr_abstract = old_abstract
+#         c_orig = orig
+#         done = False
+#         cnt = 0
+#         while(True):
+#             if done:
+#                 break
+#             try:
+#                 #try to find word
+#                 found_i = curr_abstract.index(word)
 
-                #find context of 100 characters around it
-                l_b = max(0, found_i - 100)
-                u_b = min(len(curr_abstract), found_i+len(word)+100)
+#                 #find context of 100 characters around it
+#                 l_b = max(0, found_i - 100)
+#                 u_b = min(len(curr_abstract), found_i+len(word)+100)
                 
-                if(l_b > u_b):
-                    break
-                else:
-                    cnt+=1
+#                 if(l_b > u_b):
+#                     break
+#                 else:
+#                     cnt+=1
 
-                if(u_b == len(curr_abstract)):
-                    break
+#                 if(u_b == len(curr_abstract)):
+#                     break
 
-                #shorten the text to take out the found keyword
+#                 #shorten the text to take out the found keyword
                 
-                curr_abstract = curr_abstract[found_i + len(word):]
-                c_orig = c_orig[found_i + len(word):]
+#                 curr_abstract = curr_abstract[found_i + len(word):]
+#                 c_orig = c_orig[found_i + len(word):]
 
-            except ValueError:
-                # print("DONE")
-                #if cannot find then we are done
-                done = True
-                continue
-            except Exception as e:
-                break
-        if cnt != 0:
-            #append number of topics found and the specific keyword
-            ret.append([word,cnt])
+#             except ValueError:
+#                 # print("DONE")
+#                 #if cannot find then we are done
+#                 done = True
+#                 continue
+#             except Exception as e:
+#                 break
+#         if cnt != 0:
+#             #append number of topics found and the specific keyword
+#             ret.append([word,cnt])
 
-            # print([word, cnt])
+#             # print([word, cnt])
     
-    return ret#returns the specific word & context
+#     return ret#returns the specific word & context
 
 def cleaning(tmp): #PREPROCESS FULL TEXT
     #     print(tmp)
@@ -101,9 +101,9 @@ def cleaning(tmp): #PREPROCESS FULL TEXT
        
 keyi = 0 #API KEY INDEX
 # INSTANCES OF FOUND BUZZWORDS
-buzzwords_found = pd.DataFrame(columns = ["index", "doi", "buzz_id","category", "subword", "count"])
+# buzzwords_found = pd.DataFrame(columns = ["index", "doi", "buzz_id","category", "subword", "count"])
 #CONTEXT OF KEYWORDS (NOT USED)
-contexts = pd.DataFrame(columns = ["index", "doi", "context"])
+# contexts = pd.DataFrame(columns = ["index", "doi", "context"])
 #ERROR PAPERS
 error_df = pd.DataFrame(columns = ["index", "doi"])
 # CORPUS OF FULL TEXTS
@@ -176,22 +176,25 @@ def fullText(i, keyi):
 error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
-    if i%1500==0 and i !=0:
-        error_df.to_csv(os.getcwd().replace('scripts', 'error_df'+str(error_df_i)+'.csv'), index = False)
+    if i%5==0 and i !=0:
+        full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
         error_df_i+=1
-        error_df = pd.DataFrame(columns = ["index", "doi"])
+        full_text_df = pd.DataFrame(columns = ["index", "text"])
 
     # print(i)
     ft = fullText(i = i, keyi = keyi)
     
     if ft == None:
         error_df.loc[len(error_df.index)] = [i,papers.iat[i,4]]
+    else:
+        full_text_df.loc[len(full_text_df.index)] = [i, ft]
 #     print(ft)
-    for j in range(words.shape[0]):
-        subterms = words.iat[j, 1]
-#         print(subterms)
-        for found in find_keywords(subterms, ft):
-            buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
+#     for j in range(words.shape[0]):
+#         subterms = words.iat[j, 1]
+# #         print(subterms)
+#         for found in find_keywords(subterms, ft):
+#             buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
 
-buzzwords_found.to_csv('found_buzzwords.csv', index = False)
+# buzzwords_found.to_csv('found_buzzwords.csv', index = False)
 error_df.to_csv('error_full_text.csv', index = False)
+full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
