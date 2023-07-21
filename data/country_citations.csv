@@ -1,77 +1,77 @@
 country,citations
-China,201343.0
-United States,93584.0
-Australia,34034.0
-India,24267.0
-Germany,22272.0
-Canada,21929.0
-United Kingdom,19590.0
-Netherlands,18363.0
-Iran,18123.0
-Italy,16605.0
-Spain,14035.0
-South Korea,13805.0
-France,12598.0
-Singapore,11458.0
-Japan,9914.0
-Switzerland,9127.0
-Hong Kong,8146.0
-Brazil,8097.0
+China,193222.0
+United States,91252.0
+Australia,33438.0
+India,23985.0
+Germany,22018.0
+Canada,21562.0
+United Kingdom,19439.0
+Netherlands,17975.0
+Iran,17721.0
+Italy,16457.0
+South Korea,13551.0
+Spain,13418.0
+France,12484.0
+Singapore,11378.0
+Japan,9751.0
+Switzerland,8953.0
+Hong Kong,7934.0
+Brazil,7829.0
 Norway,6990.0
-Turkey,6914.0
-Sweden,6906.0
-Portugal,6843.0
-Denmark,6443.0
-Viet Nam,5813.0
-Belgium,5762.0
-Malaysia,5418.0
-Taiwan,4795.0
-Egypt,4435.0
-Austria,4179.0
-Finland,3868.0
-Poland,3808.0
-Saudi Arabia,3764.0
-Pakistan,3760.0
-New Zealand,3715.0
-South Africa,3032.0
-Israel,2996.0
-Bangladesh,2401.0
-Greece,2311.0
-United Arab Emirates,2248.0
-Mexico,2122.0
-Ireland,1966.0
-Czech Republic,1929.0
-Ethiopia,1838.0
+Sweden,6871.0
+Portugal,6822.0
+Turkey,6736.0
+Denmark,6369.0
+Viet Nam,5708.0
+Belgium,5651.0
+Malaysia,5388.0
+Taiwan,4440.0
+Egypt,4319.0
+Austria,4152.0
+Finland,3860.0
+Poland,3785.0
+Saudi Arabia,3707.0
+Pakistan,3695.0
+New Zealand,3685.0
+South Africa,3004.0
+Israel,2957.0
+Bangladesh,2352.0
+United Arab Emirates,2242.0
+Greece,2134.0
+Mexico,2060.0
+Czech Republic,1911.0
+Ireland,1893.0
+Ethiopia,1779.0
 Cyprus,1684.0
-Thailand,1659.0
-Nigeria,1596.0
-Qatar,1587.0
-Russian Federation,1527.0
-Iraq,1512.0
-Argentina,1318.0
-Algeria,1304.0
-Morocco,1263.0
-Indonesia,1238.0
-Chile,1215.0
-Tunisia,1063.0
+Thailand,1636.0
+Qatar,1564.0
+Iraq,1493.0
+Russian Federation,1467.0
+Nigeria,1454.0
+Argentina,1305.0
+Algeria,1278.0
+Indonesia,1200.0
+Morocco,1121.0
+Chile,1061.0
 Ghana,1014.0
 Oman,1005.0
-Macao,1002.0
-Colombia,993.0
-Sri Lanka,976.0
-Hungary,861.0
+Tunisia,994.0
+Macao,982.0
+Colombia,958.0
+Sri Lanka,934.0
+Hungary,859.0
 Slovenia,844.0
-Kenya,836.0
+Kenya,833.0
 Georgia,747.0
 Croatia,717.0
 Nepal,636.0
 Estonia,455.0
-Cameroon,444.0
-Costa Rica,436.0
 Tanzania,435.0
-Lebanon,433.0
+Cameroon,430.0
+Costa Rica,427.0
 Jordan,427.0
 Serbia,418.0
+Lebanon,400.0
 Kuwait,393.0
 Luxembourg,379.0
 Ecuador,379.0
@@ -84,8 +84,8 @@ Uganda,245.0
 Zimbabwe,243.0
 Uruguay,227.0
 Cuba,211.0
-Ukraine,206.0
 Fiji,202.0
+Ukraine,196.0
 Philippines,174.0
 Bosnia and Herzegovina,174.0
 Rwanda,158.0
@@ -113,15 +113,15 @@ Belarus,54.0
 Afghanistan,54.0
 Armenia,51.0
 Guam,45.0
-Mozambique,44.0
 Honduras,42.0
 Bulgaria,40.0
 Libyan Arab Jamahiriya,40.0
-Myanmar,39.0
 Trinidad and Tobago,37.0
 North Korea,37.0
 Palestine,36.0
+Myanmar,35.0
 Syrian Arab Republic,34.0
+Mozambique,34.0
 Malawi,34.0
 Mongolia,33.0
 Moldova,32.0

@@ -1,72 +1,72 @@
 country,publications
-China,10867
-United States,5488
-Australia,1706
-Canada,1413
-India,1394
-Germany,1167
-United Kingdom,1084
-Iran,971
-France,924
-Italy,922
-Netherlands,902
-Spain,900
-South Korea,829
-Brazil,628
-Japan,609
-Switzerland,442
-Sweden,408
+China,10515
+United States,5388
+Australia,1678
+Canada,1390
+India,1375
+Germany,1144
+United Kingdom,1070
+Iran,961
+France,914
+Italy,911
+Netherlands,880
+Spain,878
+South Korea,808
+Brazil,613
+Japan,596
+Switzerland,434
+Sweden,405
 Norway,369
-Hong Kong,358
-Turkey,350
-Denmark,331
-Portugal,320
-Belgium,317
-Taiwan,313
-Singapore,306
-Poland,288
-South Africa,265
-Malaysia,256
-Egypt,243
-New Zealand,235
-Austria,220
-Saudi Arabia,212
-Pakistan,201
-Israel,199
-Viet Nam,192
-Mexico,173
-Greece,155
-Finland,153
-Bangladesh,145
-United Arab Emirates,141
-Ethiopia,131
-Russian Federation,130
-Czech Republic,115
-Nigeria,112
-Thailand,108
-Chile,107
-Argentina,101
-Ireland,101
-Indonesia,95
-Morocco,86
-Colombia,80
+Hong Kong,347
+Turkey,340
+Denmark,327
+Portugal,318
+Belgium,310
+Singapore,299
+Taiwan,297
+Poland,283
+South Africa,262
+Malaysia,253
+Egypt,238
+New Zealand,231
+Austria,219
+Saudi Arabia,208
+Pakistan,198
+Israel,195
+Viet Nam,188
+Mexico,168
+Greece,151
+Finland,151
+Bangladesh,143
+United Arab Emirates,140
+Ethiopia,129
+Russian Federation,125
+Czech Republic,112
+Thailand,106
+Nigeria,106
+Argentina,100
+Chile,100
+Ireland,98
+Indonesia,91
+Morocco,82
+Colombia,79
 Ghana,74
-Tunisia,74
+Tunisia,70
 Croatia,56
-Hungary,56
-Qatar,55
+Hungary,55
+Qatar,54
 Cyprus,54
-Algeria,53
 Oman,52
-Kenya,52
-Iraq,48
-Macao,47
+Algeria,51
+Kenya,50
+Iraq,46
 Tanzania,45
+Macao,45
 Nepal,44
 Slovenia,44
 Ecuador,35
-Sri Lanka,34
-Lebanon,33
+Sri Lanka,33
+Lebanon,32
 Estonia,32
 Slovakia,30
 Serbia,27
@@ -75,13 +75,13 @@ Jordan,25
 Kazakhstan,23
 Luxembourg,22
 Uganda,22
-Costa Rica,21
 Philippines,21
+Costa Rica,20
 Uruguay,19
-Cameroon,18
 Kuwait,18
-Ukraine,17
+Cameroon,17
 Lithuania,16
+Ukraine,16
 Benin,16
 Georgia,16
 Senegal,15
@@ -104,12 +104,11 @@ Namibia,6
 Burkina Faso,6
 Madagascar,6
 Puerto Rico,6
-Myanmar,6
 Cuba,6
 Mongolia,5
 Rwanda,5
 North Korea,5
-Mozambique,5
+Myanmar,5
 Zambia,5
 Libyan Arab Jamahiriya,5
 Bulgaria,4
@@ -118,6 +117,7 @@ Armenia,4
 New Caledonia,4
 Syrian Arab Republic,4
 Afghanistan,4
+Mozambique,4
 Malawi,4
 Swaziland,4
 Malta,4
