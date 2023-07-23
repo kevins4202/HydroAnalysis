@@ -31,58 +31,58 @@ keys = [
 ]
 
 #find keywords in paper full text
-# def find_keywords(k_list, abstract):
-#     ret = [] # all instances of found buzzwords
+def find_keywords(k_list, abstract):
+    ret = [] # all instances of found buzzwords
     
-#     old_abstract = abstract
+    old_abstract = abstract
     
-#     orig = old_abstract
+    orig = old_abstract
     
-#     #loop thru all buzzwords
-#     for word in k_list:
-#         word = word.lower().replace('-', ' ')
-#         curr_abstract = old_abstract
-#         c_orig = orig
-#         done = False
-#         cnt = 0
-#         while(True):
-#             if done:
-#                 break
-#             try:
-#                 #try to find word
-#                 found_i = curr_abstract.index(word)
+    #loop thru all buzzwords
+    for word in k_list:
+        word = word.lower().replace('-', ' ')
+        curr_abstract = old_abstract
+        c_orig = orig
+        done = False
+        cnt = 0
+        while(True):
+            if done:
+                break
+            try:
+                #try to find word
+                found_i = curr_abstract.index(word)
 
-#                 #find context of 100 characters around it
-#                 l_b = max(0, found_i - 100)
-#                 u_b = min(len(curr_abstract), found_i+len(word)+100)
+                #find context of 100 characters around it
+                l_b = max(0, found_i - 100)
+                u_b = min(len(curr_abstract), found_i+len(word)+100)
                 
-#                 if(l_b > u_b):
-#                     break
-#                 else:
-#                     cnt+=1
+                if(l_b > u_b):
+                    break
+                else:
+                    cnt+=1
 
-#                 if(u_b == len(curr_abstract)):
-#                     break
+                if(u_b == len(curr_abstract)):
+                    break
 
-#                 #shorten the text to take out the found keyword
+                #shorten the text to take out the found keyword
                 
-#                 curr_abstract = curr_abstract[found_i + len(word):]
-#                 c_orig = c_orig[found_i + len(word):]
+                curr_abstract = curr_abstract[found_i + len(word):]
+                c_orig = c_orig[found_i + len(word):]
 
-#             except ValueError:
-#                 # print("DONE")
-#                 #if cannot find then we are done
-#                 done = True
-#                 continue
-#             except Exception as e:
-#                 break
-#         if cnt != 0:
-#             #append number of topics found and the specific keyword
-#             ret.append([word,cnt])
+            except ValueError:
+                # print("DONE")
+                #if cannot find then we are done
+                done = True
+                continue
+            except Exception as e:
+                break
+        if cnt != 0:
+            #append number of topics found and the specific keyword
+            ret.append([word,cnt])
 
-#             # print([word, cnt])
+            # print([word, cnt])
     
-#     return ret#returns the specific word & context
+    return ret#returns the specific word & context
 
 def cleaning(tmp): #PREPROCESS FULL TEXT
     #     print(tmp)
@@ -101,9 +101,9 @@ def cleaning(tmp): #PREPROCESS FULL TEXT
        
 keyi = 0 #API KEY INDEX
 # INSTANCES OF FOUND BUZZWORDS
-# buzzwords_found = pd.DataFrame(columns = ["index", "doi", "buzz_id","category", "subword", "count"])
+buzzwords_found = pd.DataFrame(columns = ["index", "doi", "buzz_id","category", "subword", "count"])
 #CONTEXT OF KEYWORDS (NOT USED)
-# contexts = pd.DataFrame(columns = ["index", "doi", "context"])
+contexts = pd.DataFrame(columns = ["index", "doi", "context"])
 #ERROR PAPERS
 error_df = pd.DataFrame(columns = ["index", "doi"])
 # CORPUS OF FULL TEXTS
@@ -176,7 +176,7 @@ def fullText(i, keyi):
 error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
-    if i%5==0 and i !=0:
+    if i%1500==0 and i !=0:
         full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
         error_df_i+=1
         full_text_df = pd.DataFrame(columns = ["index", "text"])
@@ -189,12 +189,12 @@ for i in range(papers.shape[0]):
     else:
         full_text_df.loc[len(full_text_df.index)] = [i, ft]
 #     print(ft)
-#     for j in range(words.shape[0]):
-#         subterms = words.iat[j, 1]
-# #         print(subterms)
-#         for found in find_keywords(subterms, ft):
-#             buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
+    for j in range(words.shape[0]):
+        subterms = words.iat[j, 1]
+#         print(subterms)
+        for found in find_keywords(subterms, ft):
+            buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
 
-# buzzwords_found.to_csv('found_buzzwords.csv', index = False)
+buzzwords_found.to_csv('found_buzzwords.csv', index = False)
 error_df.to_csv('error_full_text.csv', index = False)
 full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
