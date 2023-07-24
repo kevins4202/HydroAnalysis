@@ -13,6 +13,7 @@ np.random.seed(2018)
 import nltk
 import logging
 import os
+import tqdm
 import requests as re
 import pandas as pd
 # nltk.download('wordnet')
@@ -59,23 +60,110 @@ if __name__=="__main__":
     tfidf = models.TfidfModel(bow_corpus)
     corpus_tfidf = tfidf[bow_corpus]
 
-    # number of topics
-    num_topics = 4
-    # Build LDA model
-    lda_model_tfidf = gensim.models.LdaMulticore(corpus_tfidf, num_topics=3, id2word=id2word, passes=2, workers=4)
+    grid = {}
+    grid["Validation_Set"] = {}
 
-    LDAvis_data_filepath = os.path.join('./results/ldavis_prepared_'+str(num_topics))
+    # Topics range
+    min_topics = 2
+    max_topics = 11
+    step_size = 1
+    topics_range = range(min_topics, max_topics, step_size)
+
+    # Alpha parameter
+    alpha = list(np.arange(0.01, 1, 0.3))
+    alpha.append("symmetric")
+    alpha.append("asymmetric")
+
+    # Beta parameter
+    beta = list(np.arange(0.01, 1, 0.3))
+    beta.append("symmetric")
+
+
+    def compute_coherence_values(corpus, dictionary, k, a, b):
+        lda_model = gensim.models.LdaMulticore(
+            corpus=corpus,
+            id2word=dictionary,
+            num_topics=k,
+            random_state=100,
+            chunksize=100,
+            passes=10,
+            alpha=a,
+            eta=b,
+        )
+
+        coherence_model_lda = CoherenceModel(
+            model=lda_model, texts=corpus, dictionary=dictionary, coherence="c_v"
+        )
+
+        return coherence_model_lda.get_coherence()
+
+    def runTuning(corpus, di):
+        num_of_docs = len(corpus)
+        corpus_sets = [
+                gensim.utils.ClippedCorpus(corpus, int(num_of_docs * 0.75)),
+                corpus,
+            ]
+
+        corpus_title = ["75% Corpus", "100% Corpus"]
+
+        model_results = {
+                "Validation_Set": [],
+                "Topics": [],
+                "Alpha": [],
+                "Beta": [],
+                "Coherence": [],
+            }
+            # Can take a long time to run
+        if 1 == 1:
+            pbar = tqdm.tqdm(
+                total=(len(beta) * len(alpha) * len(topics_range) * len(corpus_title))
+                )
+
+                # iterate through validation corpuses
+            for i in range(len(corpus_sets)):
+                    # iterate through number of topics
+                for k in topics_range:
+                        # iterate through alpha values
+                    for a in alpha:
+                            # iterare through beta values
+                        for b in beta:
+                                # get the coherence score for the given parameters
+                            cv = compute_coherence_values(
+                                    corpus=corpus_sets[i], dictionary=di, k=k, a=a, b=b
+                                )
+                                # Save the model results
+                            model_results["Validation_Set"].append(corpus_title[i])
+                            model_results["Topics"].append(k)
+                            model_results["Alpha"].append(a)
+                            model_results["Beta"].append(b)
+                            model_results["Coherence"].append(cv)
+
+                            pbar.update(1)
+            pd.DataFrame(model_results).to_csv(
+                    "./results/lda_tfidf_tuning_results.csv", index=False
+                )
+            pbar.close()
+
+    runTuning(corpus_tfidf,id2word)
+
+
+    # number of topics
+    # num_topics = 4
+    # Build LDA model
+    # lda_model_tfidf = gensim.models.LdaMulticore(corpus_tfidf, num_topics=3, id2word=id2word, passes=2, workers=4)
+
+    # LDAvis_data_filepath = os.path.join('./results/ldavis_prepared_'+str(num_topics))
 
     #tfidf
-    if 1 == 1:
-        LDAvis_prepared = pyLDAvis.gensim.prepare(lda_model_tfidf, bow_corpus, id2word)
-        with open(LDAvis_data_filepath, 'wb') as f:
-            pickle.dump(LDAvis_prepared, f)
-    # load the pre-prepared pyLDAvis data from disk
-    with open(LDAvis_data_filepath, 'rb') as f:
-        LDAvis_prepared = pickle.load(f)
-    pyLDAvis.save_html(LDAvis_prepared, './results/ldavis_tfidf_prepared_'+ str(num_topics) +'.html')
+    # if 1 == 1:
+    #     LDAvis_prepared = pyLDAvis.gensim.prepare(lda_model_tfidf, bow_corpus, id2word)
+    #     with open(LDAvis_data_filepath, 'wb') as f:
+    #         pickle.dump(LDAvis_prepared, f)
+    # # load the pre-prepared pyLDAvis data from disk
+    # with open(LDAvis_data_filepath, 'rb') as f:
+    #     LDAvis_prepared = pickle.load(f)
+    # pyLDAvis.save_html(LDAvis_prepared, './results/ldavis_tfidf_prepared_'+ str(num_topics) +'.html')
     
-    coherence_model_lda = CoherenceModel(model=lda_model_tfidf, texts=processed_docs, dictionary=id2word, coherence='c_v')
-    coherence_lda = coherence_model_lda.get_coherence()
-    print('Coherence Score: ', coherence_lda)
+    # coherence_model_lda = CoherenceModel(model=lda_model_tfidf, texts=processed_docs, dictionary=id2word, coherence='c_v')
+    # coherence_lda = coherence_model_lda.get_coherence()
+    # print('Coherence Score: ', coherence_lda)
