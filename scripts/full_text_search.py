@@ -156,7 +156,7 @@ error_df = pd.DataFrame(columns = ["index", "doi"])
 
 #RUN!!!!!!!!!!!!!!!!!!!  
 error_df_i = 0
-for i in range(papers.shape[0]):
+for i in range(25500,25600):
     print(i)
     # if i%1500==0 and i !=0:
     #     full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i)+'.csv', index = False)
@@ -164,8 +164,10 @@ for i in range(papers.shape[0]):
     #     full_text_df = pd.DataFrame(columns = ["index", "text"])
 
     # print(i)
-    ft = pd.read_csv('/Volumes/mac/corpus/text_corpus'+str(i//1500)+'.csv').loc[i]['text']
+    ft_df = pd.read_csv(os.getcwd().replace('scripts', 'data')+'/text_corpus/text_corpus'+str(i//1500)+'.csv')
     
+    ft = ft_df[ft_df['index']==i].iat[0,1]
+
     if ft == None:
         error_df.loc[len(error_df.index)] = [i,papers.iat[i,4]]
     # else:
@@ -179,4 +181,5 @@ for i in range(papers.shape[0]):
 
 buzzwords_found.to_csv('found_buzzwords_new.csv', index = False)
 error_df.to_csv('error_full_text.csv', index = False)
+
 # full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i+1)+'.csv', index = False)
