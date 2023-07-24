@@ -151,9 +151,6 @@ def fullText(i, keyi):
         #PREPROCESS THE WHOLE TEXT
         full_text = cleaning(full_text)    
 #         print(full_text)
-
-        #ADD IT TO THE CORPUS
-        full_text_df.loc[len(full_text_df.index)] = [i,full_text]
         
         #INCREMENT THE KEY INDEX
         keyi+=1
@@ -177,7 +174,7 @@ error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
     if i%1500==0 and i !=0:
-        full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
+        full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i)+'.csv', index = False)
         error_df_i+=1
         full_text_df = pd.DataFrame(columns = ["index", "text"])
 
@@ -197,4 +194,4 @@ for i in range(papers.shape[0]):
 
 buzzwords_found.to_csv('found_buzzwords.csv', index = False)
 error_df.to_csv('error_full_text.csv', index = False)
-full_text_df.to_csv('text_corpus'+str(error_df_i)+'.csv', index = False)
+full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i+1)+'.csv', index = False)
