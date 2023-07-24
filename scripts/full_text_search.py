@@ -15,21 +15,6 @@ words = pd.DataFrame(columns = ['topic', 'keywords'])
 for i in range(kwords.shape[0]):
     words.loc[len(words.index)] = [str(kwords.iat[int(i),0]), str (kwords.iat[int(i),1]).split(", ")]
 
-# print(kwords)
-
-#API KEYS
-keys = [
-    "d0c39572282257204e73e16476da7d80",
-    "9cd9459f5f9679f35f791efa0146f3f7",
-    "4fed3a6ea82674610dc37e597f4c1b1c",
-    "d6808e44f5904f1fd9a01e0404f56bc1",
-    "146b970d412eaae2851db7c51d2a731b",
-    "48e96520d3ddbb4c4abc45ad6b0421d6",
-    "4e23a40cfe1ab144604586aae4c42565",
-    "4b32aea068998554f30a282f965c271e",
-    "a1e7378d4d1046a8fa9bbf1750d480a4"
-]
-
 #find keywords in paper full text
 def find_keywords(k_list, abstract):
     ret = [] # all instances of found buzzwords
@@ -107,84 +92,84 @@ contexts = pd.DataFrame(columns = ["index", "doi", "context"])
 #ERROR PAPERS
 error_df = pd.DataFrame(columns = ["index", "doi"])
 # CORPUS OF FULL TEXTS
-full_text_df = pd.DataFrame(columns = ["index", "text"])
+# full_text_df = pd.DataFrame(columns = ["index", "text"])
 
-#get the full text
-def fullText(i, keyi):
-    #doi of paper at this index
-    doi = papers.iat[i,4]
-#     done = False
-#     print(doi)
-    try:
-        #make the request
-        js = requests.get(
-            f"https://api.elsevier.com/content/article/doi/{doi}",
-            headers = {"X-ELS-APIKey":keys[keyi], "Accept":"application/json"}
-,
-        )
+# #get the full text
+# def fullText(i, keyi):
+#     #doi of paper at this index
+#     doi = papers.iat[i,4]
+# #     done = False
+# #     print(doi)
+#     try:
+#         #make the request
+#         js = requests.get(
+#             f"https://api.elsevier.com/content/article/doi/{doi}",
+#             headers = {"X-ELS-APIKey":keys[keyi], "Accept":"application/json"}
+# ,
+#         )
         
-        r = js.json()
+#         r = js.json()
 
-        full_text = r['full-text-retrieval-response']['originalText']
-#         full_text = re.sub(r'^https?:\/\/.[^\s]+', '', full_text)
-#         print(full_text)
+#         full_text = r['full-text-retrieval-response']['originalText']
+# #         full_text = re.sub(r'^https?:\/\/.[^\s]+', '', full_text)
+# #         print(full_text)
         
-        #GET THE ABSTRACT
-        abstr = r['full-text-retrieval-response']['coredata']['dc:description'][:25]
+#         #GET THE ABSTRACT
+#         abstr = r['full-text-retrieval-response']['coredata']['dc:description'][:25]
          
-        index = full_text.find(abstr)
-        if(index==-1):
-            #BROKEN
-            other.append(i)
-            return None
+#         index = full_text.find(abstr)
+#         if(index==-1):
+#             #BROKEN
+#             other.append(i)
+#             return None
         
 
-        #CUT OFF FULL TEXT SO IT STARTS FROM ABSTRACT
-        full_text = full_text[index:]
+#         #CUT OFF FULL TEXT SO IT STARTS FROM ABSTRACT
+#         full_text = full_text[index:]
         
-        #CUT OFF FULL TEXT SO IT ENDS BEFORE THE REFERENCES
-        if full_text.find("References") == -1:
-            other.append(i)
-            return None
-        full_text = ''.join(full_text.split('References')[:-1])
+#         #CUT OFF FULL TEXT SO IT ENDS BEFORE THE REFERENCES
+#         if full_text.find("References") == -1:
+#             other.append(i)
+#             return None
+#         full_text = ''.join(full_text.split('References')[:-1])
 
-        #PREPROCESS THE WHOLE TEXT
-        full_text = cleaning(full_text)    
-#         print(full_text)
+#         #PREPROCESS THE WHOLE TEXT
+#         full_text = cleaning(full_text)    
+# #         print(full_text)
         
-        #INCREMENT THE KEY INDEX
-        keyi+=1
+#         #INCREMENT THE KEY INDEX
+#         keyi+=1
         
-        return full_text
-    except Exception as e:
-        if js.status_code == 404:
-            error_df.loc[len(error_df.index)] = [i,doi]
-            print("NOT FOUND")
-        elif js.status_code ==429:
-            print("KEY ERROR")
-            keyi+=1
-            return fullText(i, (keyi)%9)
-        else:
-            print("OTHER ERROR")
-            error_df.loc[len(error_df.index)] = [i,doi]
-        return None
+#         return full_text
+#     except Exception as e:
+#         if js.status_code == 404:
+#             error_df.loc[len(error_df.index)] = [i,doi]
+#             print("NOT FOUND")
+#         elif js.status_code ==429:
+#             print("KEY ERROR")
+#             keyi+=1
+#             return fullText(i, (keyi)%9)
+#         else:
+#             print("OTHER ERROR")
+#             error_df.loc[len(error_df.index)] = [i,doi]
+#         return None
 
 #RUN!!!!!!!!!!!!!!!!!!!  
 error_df_i = 0
 for i in range(papers.shape[0]):
     print(i)
-    if i%1500==0 and i !=0:
-        full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i)+'.csv', index = False)
-        error_df_i+=1
-        full_text_df = pd.DataFrame(columns = ["index", "text"])
+    # if i%1500==0 and i !=0:
+    #     full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i)+'.csv', index = False)
+    #     error_df_i+=1
+    #     full_text_df = pd.DataFrame(columns = ["index", "text"])
 
     # print(i)
-    ft = fullText(i = i, keyi = keyi)
+    ft = pd.read_csv('/Volumes/mac/corpus/text_corpus'+str(i//1500)+'.csv').loc[i]['text']
     
     if ft == None:
         error_df.loc[len(error_df.index)] = [i,papers.iat[i,4]]
-    else:
-        full_text_df.loc[len(full_text_df.index)] = [i, ft]
+    # else:
+        # full_text_df.loc[len(full_text_df.index)] = [i, ft]
 #     print(ft)
     for j in range(words.shape[0]):
         subterms = words.iat[j, 1]
@@ -192,6 +177,6 @@ for i in range(papers.shape[0]):
         for found in find_keywords(subterms, ft):
             buzzwords_found.loc[len(buzzwords_found.index)] = [i,papers.iat[i,4], j,words.iat[j,0], found[0], found[1]]
 
-buzzwords_found.to_csv('found_buzzwords.csv', index = False)
+buzzwords_found.to_csv('found_buzzwords_new.csv', index = False)
 error_df.to_csv('error_full_text.csv', index = False)
-full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i+1)+'.csv', index = False)
+# full_text_df.to_csv('/Volumes/mac/corpus/text_corpus'+str(error_df_i+1)+'.csv', index = False)

@@ -1,0 +1,16 @@
+index,doi,buzz_id,category,subword,count
+0,10.1016/j.advwatres.2023.104474,7,Modeling,simulation,24
+0,10.1016/j.advwatres.2023.104474,7,Modeling,model validation,1
+1,10.1016/j.advwatres.2023.104475,7,Modeling,simulation,21
+1,10.1016/j.advwatres.2023.104475,7,Modeling,model parameters,1
+1,10.1016/j.advwatres.2023.104475,14,Nanotechnology,nanoparticle,102
+2,10.1016/j.advwatres.2023.104476,7,Modeling,simulation,1
+3,10.1016/j.advwatres.2023.104477,7,Modeling,simulation,24
+3,10.1016/j.advwatres.2023.104477,7,Modeling,model parameters,2
+3,10.1016/j.advwatres.2023.104477,18,Data Mining,genetic algorithms,7
+3,10.1016/j.advwatres.2023.104477,18,Data Mining,overfitting,1
+4,10.1016/j.advwatres.2023.104485,7,Modeling,simulation,5
+4,10.1016/j.advwatres.2023.104485,7,Modeling,model calibration,6
+4,10.1016/j.advwatres.2023.104485,7,Modeling,model prediction,2
+4,10.1016/j.advwatres.2023.104485,7,Modeling,model parameters,12
+4,10.1016/j.advwatres.2023.104485,7,Modeling,model development,1
