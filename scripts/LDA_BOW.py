@@ -52,6 +52,8 @@ if __name__=="__main__":
         papers_to_process = pd.concat([papers_to_process, pd.read_csv(os.getcwd().replace('scripts', 'data') + f'/text_corpus/text_corpus{i}.csv').loc[:100]])
 
     papers_to_process = papers_to_process.drop_duplicates().reset_index(drop = True)
+    
+    print(papers_to_process.isnull().values.any())
 
     processed_docs = papers_to_process['text'].map(preprocess)
     id2word = corpora.Dictionary(processed_docs)
@@ -76,10 +78,11 @@ if __name__=="__main__":
     beta.append("symmetric")
 
 
-    def compute_coherence_values(corpus, dictionary, k, a, b):
+    def compute_coherence_values(corpus, texts, k, a, b):
+        print("model")
         lda_model = gensim.models.LdaMulticore(
             corpus=corpus,
-            id2word=dictionary,
+            id2word=corpora.Dictionary(texts),
             num_topics=k,
             random_state=100,
             chunksize=100,
@@ -87,14 +90,14 @@ if __name__=="__main__":
             alpha=a,
             eta=b,
         )
-
+        print("coherence")
         coherence_model_lda = CoherenceModel(
-            model=lda_model, texts=corpus, dictionary=dictionary, coherence="c_v"
+            model=lda_model, corpus=corpus, texts = texts, coherence="c_v"
         )
 
         return coherence_model_lda.get_coherence()
 
-    def runTuning(corpus, di):
+    def runTuning(corpus, docs):
         num_of_docs = len(corpus)
         corpus_sets = [
                 gensim.utils.ClippedCorpus(corpus, int(num_of_docs * 0.75)),
@@ -112,9 +115,11 @@ if __name__=="__main__":
             }
             # Can take a long time to run
         if 1 == 1:
+            print("pbar")
             pbar = tqdm.tqdm(
                 total=(len(beta) * len(alpha) * len(topics_range) * len(corpus_title))
                 )
+            print("pbar done")
 
                 # iterate through validation corpuses
             for i in range(len(corpus_sets)):
@@ -126,7 +131,7 @@ if __name__=="__main__":
                         for b in beta:
                                 # get the coherence score for the given parameters
                             cv = compute_coherence_values(
-                                    corpus=corpus_sets[i], dictionary=di, k=k, a=a, b=b
+                                    corpus=corpus[i], texts = docs, k=k, a=a, b=b
                                 )
                                 # Save the model results
                             model_results["Validation_Set"].append(corpus_title[i])
@@ -141,7 +146,7 @@ if __name__=="__main__":
                 )
             pbar.close()
 
-    runTuning(bow_corpus,id2word)
+    runTuning(bow_corpus,processed_docs)
 
     # number of topics
     # num_topics = 4
