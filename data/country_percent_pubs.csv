@@ -1,1124 +1,1019 @@
 country,percent_pubs
-China,"0    0.307964
-1    0.366098
-2    0.385101
-3    0.419297
-4    0.458484
-5    0.500476
+China,"0    0.335771
+1    0.406984
+2    0.418879
+3    0.428571
+4    0.463401
+5    0.506698
 Name: China, dtype: float64"
-United States,"0    0.261240
-1    0.224146
-2    0.217790
-3    0.192073
-4    0.187513
-5    0.176452
+United States,"0    0.263298
+1    0.232381
+2    0.215929
+3    0.188142
+4    0.192625
+5    0.193853
 Name: United States, dtype: float64"
-Australia,"0    0.079048
-1    0.061951
-2    0.061062
-3    0.067073
-4    0.065407
-5    0.054903
+Australia,"0    0.080452
+1    0.057143
+2    0.057227
+3    0.061158
+4    0.058888
+5    0.048857
 Name: Australia, dtype: float64"
-Canada,"0    0.057596
-1    0.049756
-2    0.049257
-3    0.057209
-4    0.056488
-5    0.051730
+Canada,"0    0.056516
+1    0.047619
+2    0.047198
+3    0.060224
+4    0.061090
+5    0.066194
 Name: Canada, dtype: float64"
-India,"0    0.049368
-1    0.051220
-2    0.060045
-3    0.052547
-4    0.051179
-5    0.053316
+India,"0    0.047207
+1    0.044444
+2    0.052507
+3    0.047152
+4    0.047331
+5    0.052797
 Name: India, dtype: float64"
-Germany,"0    0.055539
-1    0.047073
-2    0.040098
-3    0.041786
-4    0.046082
-5    0.036496
-Name: Germany, dtype: float64"
-United Kingdom,"0    0.047605
-1    0.042683
-2    0.036434
-3    0.038558
-4    0.042684
-5    0.043796
+United Kingdom,"0    0.051197
+1    0.043810
+2    0.041888
+3    0.039683
+4    0.046230
+5    0.051221
 Name: United Kingdom, dtype: float64"
-Iran,"0    0.027035
-1    0.044878
-2    0.044576
-3    0.039096
-4    0.035889
-5    0.025071
+Germany,"0    0.053191
+1    0.041905
+2    0.039528
+3    0.042484
+4    0.046230
+5    0.039401
+Name: Germany, dtype: float64"
+Iran,"0    0.028590
+1    0.043810
+2    0.048968
+3    0.041550
+4    0.039626
+5    0.024429
 Name: Iran, dtype: float64"
-France,"0    0.039377
-1    0.036585
-2    0.039284
-3    0.030667
-4    0.032279
-5    0.036179
+France,"0    0.027261
+1    0.034286
+2    0.043068
+3    0.039683
+4    0.033021
+5    0.038613
 Name: France, dtype: float64"
-Italy,"0    0.047311
-1    0.036341
-2    0.032974
-3    0.035151
-4    0.030155
-5    0.032053
+Italy,"0    0.048537
+1    0.027937
+2    0.034808
+3    0.031746
+4    0.035223
+5    0.035461
 Name: Italy, dtype: float64"
-Spain,"0    0.036145
-1    0.033902
-2    0.030328
-3    0.030308
-4    0.039286
-5    0.035862
-Name: Spain, dtype: float64"
-Netherlands,"0    0.037614
-1    0.038293
-2    0.033177
-3    0.031205
-4    0.033765
-5    0.031419
+Netherlands,"0    0.037899
+1    0.034921
+2    0.031268
+3    0.022409
+4    0.037424
+5    0.034673
 Name: Netherlands, dtype: float64"
-South Korea,"0    0.029386
-1    0.030000
-2    0.033788
-3    0.035868
-4    0.026970
-5    0.029197
+Spain,"0    0.034574
+1    0.027302
+2    0.023009
+3    0.025677
+4    0.030820
+5    0.034673
+Name: Spain, dtype: float64"
+South Korea,"0    0.032580
+1    0.033651
+2    0.032448
+3    0.027544
+4    0.029719
+5    0.017336
 Name: South Korea, dtype: float64"
-Brazil,"0    0.025272
-1    0.029024
-2    0.022390
-3    0.024570
-4    0.022722
-5    0.017137
-Name: Brazil, dtype: float64"
-Japan,"0    0.024390
-1    0.024390
-2    0.024629
-3    0.021700
-4    0.022298
-5    0.020946
+Japan,"0    0.025931
+1    0.031111
+2    0.020649
+3    0.025677
+4    0.025867
+5    0.018913
 Name: Japan, dtype: float64"
-Switzerland,"0    0.021158
-1    0.014878
-2    0.014451
-3    0.017575
-4    0.016989
-5    0.016503
+Brazil,"0    0.021277
+1    0.024127
+2    0.022419
+3    0.025210
+4    0.017611
+5    0.012608
+Name: Brazil, dtype: float64"
+Switzerland,"0    0.023271
+1    0.011429
+2    0.014749
+3    0.018207
+4    0.019263
+5    0.014972
 Name: Switzerland, dtype: float64"
-Sweden,"0    0.019101
-1    0.013171
-2    0.012823
-3    0.016858
-4    0.015715
-5    0.017455
-Name: Sweden, dtype: float64"
-Norway,"0    0.016750
-1    0.016098
-2    0.013637
-3    0.018113
-4    0.010830
-5    0.008569
+Norway,"0    0.018617
+1    0.015873
+2    0.017109
+3    0.021008
+4    0.014860
+5    0.009456
 Name: Norway, dtype: float64"
-Hong Kong,"0    0.010579
-1    0.013659
-2    0.012212
-3    0.012195
-4    0.014440
-5    0.018724
-Name: Hong Kong, dtype: float64"
-Turkey,"0    0.012930
-1    0.016829
-2    0.013027
-3    0.015423
-4    0.008707
-5    0.011425
-Name: Turkey, dtype: float64"
-Denmark,"0    0.011460
-1    0.011463
-2    0.007735
-3    0.013630
-4    0.016352
-5    0.015868
-Name: Denmark, dtype: float64"
-Portugal,"0    0.012048
-1    0.013415
-2    0.015876
-3    0.014527
-4    0.008070
-5    0.007934
-Name: Portugal, dtype: float64"
-Belgium,"0    0.012342
-1    0.012683
-2    0.012212
-3    0.013092
-4    0.010406
-5    0.010790
-Name: Belgium, dtype: float64"
-Singapore,"0    0.014987
-1    0.016829
-2    0.013027
-3    0.009326
-4    0.007857
-5    0.008251
-Name: Singapore, dtype: float64"
-Taiwan,"0    0.013517
-1    0.012195
-2    0.009770
-3    0.012016
-4    0.010618
-5    0.011425
+Sweden,"0    0.016622
+1    0.008889
+2    0.013569
+3    0.014939
+4    0.013209
+5    0.014184
+Name: Sweden, dtype: float64"
+Taiwan,"0    0.016622
+1    0.015873
+2    0.012389
+3    0.013072
+4    0.011007
+5    0.011820
 Name: Taiwan, dtype: float64"
-Poland,"0    0.009110
-1    0.010000
-2    0.012823
-3    0.012195
-4    0.010406
-5    0.009838
+Belgium,"0    0.011303
+1    0.013968
+2    0.012389
+3    0.012605
+4    0.012658
+5    0.011032
+Name: Belgium, dtype: float64"
+Turkey,"0    0.014628
+1    0.015873
+2    0.015929
+3    0.016807
+4    0.005504
+5    0.003940
+Name: Turkey, dtype: float64"
+Denmark,"0    0.013963
+1    0.008254
+2    0.007080
+3    0.013072
+4    0.017611
+5    0.012608
+Name: Denmark, dtype: float64"
+Singapore,"0    0.017287
+1    0.020952
+2    0.011209
+3    0.010738
+4    0.006054
+5    0.006304
+Name: Singapore, dtype: float64"
+Portugal,"0    0.012633
+1    0.015238
+2    0.013569
+3    0.014006
+4    0.009356
+5    0.007092
+Name: Portugal, dtype: float64"
+Hong Kong,"0    0.008644
+1    0.013968
+2    0.011209
+3    0.011671
+4    0.013759
+5    0.011032
+Name: Hong Kong, dtype: float64"
+Poland,"0    0.009309
+1    0.008889
+2    0.008260
+3    0.010738
+4    0.011007
+5    0.007092
 Name: Poland, dtype: float64"
-South Africa,"0    0.009697
-1    0.011220
-2    0.009974
-3    0.010581
-4    0.011467
-5    0.006665
-Name: South Africa, dtype: float64"
-Malaysia,"0    0.006759
-1    0.007317
-2    0.013230
-3    0.011657
-4    0.008919
-5    0.008886
+Malaysia,"0    0.006649
+1    0.008889
+2    0.013569
+3    0.011204
+4    0.007705
+5    0.006304
 Name: Malaysia, dtype: float64"
-Egypt,"0    0.008228
-1    0.008049
-2    0.008549
-3    0.010760
-4    0.008707
-5    0.010790
+Egypt,"0    0.006649
+1    0.007619
+2    0.009440
+3    0.007937
+4    0.010457
+5    0.007880
 Name: Egypt, dtype: float64"
-New Zealand,"0    0.012048
-1    0.009756
-2    0.009974
-3    0.006994
-4    0.007645
-5    0.008251
-Name: New Zealand, dtype: float64"
-Austria,"0    0.008816
-1    0.007805
-2    0.005699
-3    0.007532
-4    0.012317
-5    0.009203
-Name: Austria, dtype: float64"
-Saudi Arabia,"0    0.005583
-1    0.003902
-2    0.006106
-3    0.009326
-4    0.010830
-5    0.012694
-Name: Saudi Arabia, dtype: float64"
-Israel,"0    0.008228
-1    0.009268
-2    0.008956
-3    0.005560
-4    0.007645
-5    0.005712
-Name: Israel, dtype: float64"
-Pakistan,"0    0.003526
-1    0.005854
-2    0.007124
-3    0.008250
-4    0.011255
-5    0.008886
+South Africa,"0    0.007314
+1    0.007619
+2    0.008850
+3    0.011204
+4    0.011007
+5    0.003152
+Name: South Africa, dtype: float64"
+Pakistan,"0    0.004654
+1    0.006984
+2    0.007670
+3    0.008870
+4    0.009906
+5    0.011032
 Name: Pakistan, dtype: float64"
-Viet Nam,"0    0.005877
-1    0.006585
-2    0.011195
-3    0.008250
-4    0.006158
-5    0.003491
+New Zealand,"0    0.007314
+1    0.008889
+2    0.005900
+3    0.007470
+4    0.008806
+5    0.007880
+Name: New Zealand, dtype: float64"
+Viet Nam,"0    0.005319
+1    0.007619
+2    0.014159
+3    0.006536
+4    0.006054
+5    0.004728
 Name: Viet Nam, dtype: float64"
-Mexico,"0    0.005289
-1    0.005610
-2    0.008956
-3    0.005918
-4    0.005521
-5    0.007617
+Saudi Arabia,"0    0.004654
+1    0.003810
+2    0.007080
+3    0.007470
+4    0.009906
+5    0.010244
+Name: Saudi Arabia, dtype: float64"
+Israel,"0    0.008644
+1    0.008254
+2    0.007670
+3    0.003268
+4    0.006604
+5    0.007880
+Name: Israel, dtype: float64"
+Austria,"0    0.009309
+1    0.003175
+2    0.002360
+3    0.007470
+4    0.009356
+5    0.007880
+Name: Austria, dtype: float64"
+Mexico,"0    0.001995
+1    0.005714
+2    0.010029
+3    0.006536
+4    0.005504
+5    0.007880
 Name: Mexico, dtype: float64"
-Greece,"0    0.007053
-1    0.007805
-2    0.006717
-3    0.005201
-4    0.003610
-5    0.005078
+Greece,"0    0.006649
+1    0.008254
+2    0.008260
+3    0.003268
+4    0.003302
+5    0.004728
 Name: Greece, dtype: float64"
-Finland,"0    0.006171
-1    0.007805
-2    0.005292
-3    0.006636
-4    0.004884
-5    0.003808
-Name: Finland, dtype: float64"
-Bangladesh,"0    0.003232
-1    0.005610
-2    0.006920
-3    0.004125
-4    0.006371
-5    0.006982
-Name: Bangladesh, dtype: float64"
-United Arab Emirates,"0    0.002351
-1    0.004390
-2    0.006310
-3    0.005560
-4    0.006158
-5    0.007299
+United Arab Emirates,"0    0.001995
+1    0.001905
+2    0.008260
+3    0.005602
+4    0.007155
+5    0.009456
 Name: United Arab Emirates, dtype: float64"
-Ethiopia,"0    0.004996
-1    0.004390
-2    0.004071
-3    0.005739
-4    0.005309
-5    0.005395
+Ethiopia,"0    0.001995
+1    0.003810
+2    0.002950
+3    0.004669
+4    0.006604
+5    0.007880
 Name: Ethiopia, dtype: float64"
-Russian Federation,"0    0.002645
-1    0.005610
-2    0.007327
-3    0.003049
-4    0.004884
-5    0.005395
-Name: Russian Federation, dtype: float64"
-Czech Republic,"0    0.003820
-1    0.005122
-2    0.003053
-3    0.004663
-4    0.004672
-5    0.004760
-Name: Czech Republic, dtype: float64"
-Thailand,"0    0.003232
-1    0.003659
-2    0.003257
-3    0.004842
-4    0.004247
-5    0.005395
-Name: Thailand, dtype: float64"
-Nigeria,"0    0.001469
-1    0.002439
-2    0.004274
-3    0.004304
-4    0.005734
-5    0.006030
+Nigeria,"0    0.000665
+1    0.004444
+2    0.005900
+3    0.003735
+4    0.007705
+5    0.003940
 Name: Nigeria, dtype: float64"
-Chile,"0    0.004408
-1    0.002927
-2    0.002239
-3    0.005380
-4    0.003822
-5    0.004443
+Finland,"0    0.005319
+1    0.002540
+2    0.003540
+3    0.008403
+4    0.003302
+5    0.003152
+Name: Finland, dtype: float64"
+Chile,"0    0.003989
+1    0.003175
+2    0.001180
+3    0.006069
+4    0.003853
+5    0.007092
 Name: Chile, dtype: float64"
-Argentina,"0    0.003526
-1    0.004634
-2    0.004478
-3    0.004125
-4    0.003185
-5    0.002856
-Name: Argentina, dtype: float64"
-Ireland,"0    0.004114
-1    0.001951
-2    0.004071
-3    0.005739
-4    0.002124
-5    0.004443
+Russian Federation,"0    0.001330
+1    0.003810
+2    0.008260
+3    0.002334
+4    0.003853
+5    0.005516
+Name: Russian Federation, dtype: float64"
+Czech Republic,"0    0.003324
+1    0.005079
+2    0.003540
+3    0.005602
+4    0.003302
+5    0.003940
+Name: Czech Republic, dtype: float64"
+Bangladesh,"0    0.003324
+1    0.006349
+2    0.002950
+3    0.002334
+4    0.003853
+5    0.005516
+Name: Bangladesh, dtype: float64"
+Ireland,"0    0.003989
+1    0.002540
+2    0.003540
+3    0.005602
+4    0.003302
+5    0.003940
 Name: Ireland, dtype: float64"
-Indonesia,"0    0.002645
-1    0.002439
-2    0.003257
-3    0.003945
-4    0.003185
-5    0.006030
-Name: Indonesia, dtype: float64"
-Colombia,"0    0.003526
-1    0.003659
-2    0.002646
-3    0.003049
-4    0.003398
-5    0.001904
-Name: Colombia, dtype: float64"
-Morocco,"0    0.001469
-1    0.001707
-2    0.002850
-3    0.005739
-4    0.003398
-5    0.002539
-Name: Morocco, dtype: float64"
-Ghana,"0    0.001763
-1    0.002439
-2    0.002646
-3    0.002869
-4    0.004247
-5    0.002856
-Name: Ghana, dtype: float64"
-Tunisia,"0    0.002939
-1    0.003659
-2    0.001832
-3    0.002331
-4    0.003610
-5    0.001904
-Name: Tunisia, dtype: float64"
-Hungary,"0    0.002057
-1    0.001951
-2    0.001018
-3    0.002152
-4    0.002761
-5    0.003174
-Name: Hungary, dtype: float64"
-Croatia,"0    0.002351
-1    0.002439
-2    0.003664
-3    0.001614
-4    0.001487
-5    0.001269
+Argentina,"0    0.001995
+1    0.004444
+2    0.002360
+3    0.005135
+4    0.005504
+5    0.002364
+Name: Argentina, dtype: float64"
+Thailand,"0    0.002660
+1    0.001905
+2    0.001770
+3    0.003268
+4    0.004953
+5    0.005516
+Name: Thailand, dtype: float64"
+Croatia,"0    0.003989
+1    0.003810
+2    0.005310
+3    0.002334
+4    0.002752
+5    0.001576
 Name: Croatia, dtype: float64"
-Cyprus,"0    0.001763
-1    0.002439
-2    0.002646
-3    0.002152
-4    0.001487
-5    0.001904
-Name: Cyprus, dtype: float64"
-Qatar,"0    0.002939
-1    0.002927
-2    0.002239
-3    0.002152
-4    0.001699
-5    0.000317
-Name: Qatar, dtype: float64"
-Oman,"0    0.000882
-1    0.002195
-2    0.003053
-3    0.001614
-4    0.001699
-5    0.002539
-Name: Oman, dtype: float64"
-Kenya,"0    0.003820
-1    0.001707
-2    0.001221
-3    0.001614
-4    0.002336
-5    0.001269
-Name: Kenya, dtype: float64"
-Algeria,"0    0.001469
-1    0.001463
-2    0.002850
-3    0.001614
-4    0.002973
-5    0.000952
+Indonesia,"0    0.000665
+1    0.002540
+2    0.001770
+3    0.004202
+4    0.003302
+5    0.005516
+Name: Indonesia, dtype: float64"
+Morocco,"0    0.001995
+1    0.001270
+2    0.004130
+3    0.005602
+4    0.002752
+5    0.001576
+Name: Morocco, dtype: float64"
+Colombia,"0    0.005319
+1    0.001905
+2    0.002360
+3    0.003268
+4    0.002201
+5    0.000788
+Name: Colombia, dtype: float64"
+Algeria,"0    0.000665
+1    0.001905
+2    0.005900
+3    0.001401
+4    0.003302
+5    0.001576
 Name: Algeria, dtype: float64"
-Tanzania,"0    0.002057
-1    0.001463
-2    0.000204
-3    0.002331
-4    0.001487
-5    0.003491
-Name: Tanzania, dtype: float64"
-Macao,"0    0.001175
-1    0.001707
-2    0.001628
-3    0.001076
-4    0.001911
-5    0.003491
-Name: Macao, dtype: float64"
-Iraq,"0    0.001175
-1    0.001707
-2    0.002646
-3    0.000717
-4    0.002973
-5    0.001269
-Name: Iraq, dtype: float64"
-Nepal,"0    0.000294
-1    0.002195
-2    0.001425
-3    0.001255
-4    0.002336
-5    0.002856
-Name: Nepal, dtype: float64"
-Slovenia,"0    0.002351
-1    0.001951
-2    0.001832
-3    0.001255
-4    0.001699
-5    0.001269
+Ghana,"0    0.000665
+1    0.000635
+2    0.002950
+3    0.003268
+4    0.004403
+5    0.002364
+Name: Ghana, dtype: float64"
+Kenya,"0    0.003989
+1    0.001270
+2    0.001770
+3    0.002801
+4    0.002201
+5    0.001576
+Name: Kenya, dtype: float64"
+Cyprus,"0    0.001330
+1    0.002540
+2    0.005310
+3    0.001401
+4    0.001101
+5    0.001576
+Name: Cyprus, dtype: float64"
+Oman,"0    0.001330
+1    0.001905
+2    0.001770
+3    0.001867
+4    0.002201
+5    0.003940
+Name: Oman, dtype: float64"
+Tunisia,"0    0.001995
+1    0.003810
+2    0.001180
+3    0.003268
+4    0.001651
+5    0.000788
+Name: Tunisia, dtype: float64"
+Qatar,"0    0.003324
+1    0.003810
+2    0.001770
+3    0.002334
+4    0.000550
+5    0.000000
+Name: Qatar, dtype: float64"
+Slovenia,"0    0.001995
+1    0.000635
+2    0.001770
+3    0.001867
+4    0.001651
+5    0.002364
 Name: Slovenia, dtype: float64"
-Ecuador,"0    0.001175
-1    0.001951
-2    0.000814
-3    0.001076
-4    0.000637
-5    0.003174
+Iraq,"0    0.002660
+1    0.001270
+2    0.002360
+3    0.001401
+4    0.001651
+5    0.000788
+Name: Iraq, dtype: float64"
+Nepal,"0    0.000000
+1    0.001905
+2    0.001770
+3    0.001401
+4    0.001651
+5    0.003152
+Name: Nepal, dtype: float64"
+Ecuador,"0    0.000665
+1    0.002540
+2    0.001180
+3    0.000000
+4    0.000550
+5    0.004728
 Name: Ecuador, dtype: float64"
-Sri Lanka,"0    0.001763
-1    0.000976
-2    0.001425
-3    0.001255
-4    0.000849
-5    0.001587
-Name: Sri Lanka, dtype: float64"
-Estonia,"0    0.000882
-1    0.000976
-2    0.001221
-3    0.001435
-4    0.001062
-5    0.001904
-Name: Estonia, dtype: float64"
-Lebanon,"0    0.001763
-1    0.001463
-2    0.001221
-3    0.001614
-4    0.000425
-5    0.000952
-Name: Lebanon, dtype: float64"
-Slovakia,"0    0.001175
-1    0.000244
-2    0.000814
-3    0.001973
-4    0.001062
-5    0.001587
-Name: Slovakia, dtype: float64"
-Serbia,"0    0.000882
-1    0.001463
-2    0.001018
-3    0.000538
-4    0.000637
-5    0.002222
-Name: Serbia, dtype: float64"
-Peru,"0    0.001175
-1    0.000732
-2    0.000814
-3    0.000717
-4    0.000849
-5    0.001904
-Name: Peru, dtype: float64"
-Jordan,"0    0.001175
-1    0.000976
-2    0.000814
-3    0.001255
-4    0.000425
-5    0.001269
-Name: Jordan, dtype: float64"
-Kazakhstan,"0    0.001175
-1    0.000732
-2    0.000814
-3    0.000717
-4    0.000849
-5    0.001269
-Name: Kazakhstan, dtype: float64"
-Uganda,"0    0.000882
-1    0.000244
+Hungary,"0    0.001330
+1    0.001270
 2    0.000000
-3    0.001076
-4    0.001487
-5    0.001587
-Name: Uganda, dtype: float64"
-Luxembourg,"0    0.000882
-1    0.001463
-2    0.000611
-3    0.000359
-4    0.001274
-5    0.000635
-Name: Luxembourg, dtype: float64"
-Uruguay,"0    0.001763
-1    0.000488
-2    0.000814
-3    0.000538
-4    0.000212
-5    0.000952
-Name: Uruguay, dtype: float64"
-Philippines,"0    0.000588
-1    0.001463
-2    0.000611
-3    0.000717
-4    0.001062
-5    0.000317
-Name: Philippines, dtype: float64"
-Costa Rica,"0    0.000882
-1    0.000732
-2    0.000611
-3    0.001255
-4    0.000212
-5    0.000952
-Name: Costa Rica, dtype: float64"
-Cameroon,"0    0.000294
+3    0.001867
+4    0.002201
+5    0.002364
+Name: Hungary, dtype: float64"
+Lebanon,"0    0.001330
+1    0.001270
+2    0.001770
+3    0.001401
+4    0.000550
+5    0.000000
+Name: Lebanon, dtype: float64"
+Sri Lanka,"0    0.000665
+1    0.001270
+2    0.001770
+3    0.000467
+4    0.000550
+5    0.001576
+Name: Sri Lanka, dtype: float64"
+Tanzania,"0    0.000665
 1    0.000000
-2    0.001018
-3    0.000717
-4    0.000637
-5    0.001269
+2    0.000000
+3    0.002334
+4    0.001651
+5    0.001576
+Name: Tanzania, dtype: float64"
+Kazakhstan,"0    0.001330
+1    0.001270
+2    0.001180
+3    0.000467
+4    0.000000
+5    0.001576
+Name: Kazakhstan, dtype: float64"
+Serbia,"0    0.000665
+1    0.001270
+2    0.001180
+3    0.000934
+4    0.000550
+5    0.000788
+Name: Serbia, dtype: float64"
+Estonia,"0    0.000000
+1    0.000000
+2    0.000590
+3    0.001401
+4    0.001651
+5    0.001576
+Name: Estonia, dtype: float64"
+Cameroon,"0    0.000000
+1    0.000000
+2    0.002360
+3    0.000934
+4    0.001101
+5    0.000788
 Name: Cameroon, dtype: float64"
-Senegal,"0    0.000882
-1    0.000732
-2    0.000407
-3    0.000179
-4    0.000425
-5    0.001269
-Name: Senegal, dtype: float64"
-Lithuania,"0    0.000882
-1    0.000244
-2    0.000204
-3    0.000717
-4    0.000849
-5    0.000952
-Name: Lithuania, dtype: float64"
-Kuwait,"0    0.000294
-1    0.001220
-2    0.001221
-3    0.000897
-4    0.000212
+Costa Rica,"0    0.000665
+1    0.000000
+2    0.000590
+3    0.000934
+4    0.000550
+5    0.002364
+Name: Costa Rica, dtype: float64"
+Macao,"0    0.000665
+1    0.001905
+2    0.000000
+3    0.000934
+4    0.000000
+5    0.001576
+Name: Macao, dtype: float64"
+Ukraine,"0    0.001330
+1    0.000000
+2    0.001180
+3    0.000934
+4    0.000000
+5    0.001576
+Name: Ukraine, dtype: float64"
+Laos,"0    0.001330
+1    0.001270
+2    0.000590
+3    0.000467
+4    0.000550
+5    0.000788
+Name: Laos, dtype: float64"
+Georgia,"0    0.000665
+1    0.000635
+2    0.001770
+3    0.000000
+4    0.001101
+5    0.000788
+Name: Georgia, dtype: float64"
+Philippines,"0    0.000665
+1    0.001270
+2    0.000590
+3    0.000467
+4    0.001101
+5    0.000788
+Name: Philippines, dtype: float64"
+Luxembourg,"0    0.000665
+1    0.000635
+2    0.000590
+3    0.000467
+4    0.001651
+5    0.000788
+Name: Luxembourg, dtype: float64"
+Slovakia,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.003268
+4    0.000550
+5    0.000788
+Name: Slovakia, dtype: float64"
+Cote d'Ivoire,"0    0.000000
+1    0.000635
+2    0.001180
+3    0.000467
+4    0.000550
+5    0.001576
+Name: Cote d'Ivoire, dtype: float64"
+Peru,"0    0.001330
+1    0.000635
+2    0.000000
+3    0.000467
+4    0.001101
+5    0.000788
+Name: Peru, dtype: float64"
+Kuwait,"0    0.000665
+1    0.001270
+2    0.000590
+3    0.001401
+4    0.000000
 5    0.000000
 Name: Kuwait, dtype: float64"
-Georgia,"0    0.000588
-1    0.000732
-2    0.000814
-3    0.000179
-4    0.000849
-5    0.000635
-Name: Georgia, dtype: float64"
-Benin,"0    0.000588
-1    0.000488
-2    0.000611
-3    0.000717
-4    0.000425
-5    0.000952
-Name: Benin, dtype: float64"
-Ukraine,"0    0.000882
-1    0.000488
-2    0.001018
-3    0.000717
-4    0.000000
-5    0.000635
-Name: Ukraine, dtype: float64"
-Uzbekistan,"0    0.000588
-1    0.000000
-2    0.000000
-3    0.000717
-4    0.001274
-5    0.000635
-Name: Uzbekistan, dtype: float64"
-Zimbabwe,"0    0.000588
-1    0.000732
-2    0.000611
-3    0.000538
-4    0.000000
-5    0.000635
-Name: Zimbabwe, dtype: float64"
 Latvia,"0    0.000000
 1    0.000000
-2    0.000611
-3    0.000538
-4    0.000637
-5    0.001269
+2    0.000590
+3    0.000934
+4    0.000550
+5    0.001576
 Name: Latvia, dtype: float64"
-Sudan,"0    0.000588
-1    0.000244
-2    0.000611
-3    0.000717
-4    0.000425
-5    0.000317
-Name: Sudan, dtype: float64"
-Laos,"0    0.000588
-1    0.000976
-2    0.000204
-3    0.000359
-4    0.000425
-5    0.000317
-Name: Laos, dtype: float64"
-Iceland,"0    0.000000
-1    0.000244
-2    0.000611
-3    0.000538
-4    0.000425
-5    0.000952
-Name: Iceland, dtype: float64"
-Cote d'Ivoire,"0    0.000294
-1    0.000244
-2    0.000407
-3    0.000179
-4    0.000212
-5    0.001269
-Name: Cote d'Ivoire, dtype: float64"
-Cambodia,"0    0.000000
-1    0.000976
-2    0.000204
-3    0.000359
-4    0.000637
+Zimbabwe,"0    0.001330
+1    0.000635
+2    0.001180
+3    0.000467
+4    0.000000
 5    0.000000
-Name: Cambodia, dtype: float64"
-Botswana,"0    0.000000
-1    0.000488
-2    0.000204
-3    0.000359
-4    0.000637
-5    0.000317
-Name: Botswana, dtype: float64"
-Niger,"0    0.000882
-1    0.000488
+Name: Zimbabwe, dtype: float64"
+Lithuania,"0    0.001330
+1    0.000000
+2    0.000000
+3    0.000934
+4    0.000550
+5    0.000788
+Name: Lithuania, dtype: float64"
+Uganda,"0    0.000665
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.002201
+5    0.000000
+Name: Uganda, dtype: float64"
+Niger,"0    0.001995
+1    0.000000
 2    0.000000
 3    0.000000
-4    0.000425
+4    0.001101
 5    0.000000
 Name: Niger, dtype: float64"
+Benin,"0    0.000665
+1    0.000000
+2    0.000590
+3    0.000467
+4    0.000550
+5    0.000788
+Name: Benin, dtype: float64"
+Iceland,"0    0.000000
+1    0.000000
+2    0.000590
+3    0.000000
+4    0.000550
+5    0.001576
+Name: Iceland, dtype: float64"
+Senegal,"0    0.000665
+1    0.000635
+2    0.000000
+3    0.000000
+4    0.000550
+5    0.000788
+Name: Senegal, dtype: float64"
 Democratic Republic Congo,"0    0.000000
 1    0.000000
-2    0.000611
-3    0.000538
-4    0.000637
+2    0.000590
+3    0.000934
+4    0.001101
 5    0.000000
 Name: Democratic Republic Congo, dtype: float64"
-Bolivia,"0    0.000294
-1    0.000488
-2    0.000204
-3    0.000359
-4    0.000425
-5    0.000000
-Name: Bolivia, dtype: float64"
-Palestine,"0    0.000294
-1    0.000244
+Jordan,"0    0.000000
+1    0.000000
 2    0.000000
-3    0.000359
-4    0.000425
-5    0.000317
-Name: Palestine, dtype: float64"
-Fiji,"0    0.000588
-1    0.000244
-2    0.000204
-3    0.000359
-4    0.000212
+3    0.000467
+4    0.000550
+5    0.001576
+Name: Jordan, dtype: float64"
+Fiji,"0    0.000665
+1    0.000635
+2    0.000590
+3    0.000467
+4    0.000000
 5    0.000000
 Name: Fiji, dtype: float64"
-Cuba,"0    0.000588
-1    0.000976
+Sudan,"0    0.000000
+1    0.000000
 2    0.000000
-3    0.000000
-4    0.000000
+3    0.000934
+4    0.000550
+5    0.000788
+Name: Sudan, dtype: float64"
+Botswana,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.001651
 5    0.000000
-Name: Cuba, dtype: float64"
-Namibia,"0    0.000882
-1    0.000244
-2    0.000204
-3    0.000000
-4    0.000212
+Name: Botswana, dtype: float64"
+Cambodia,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.001651
 5    0.000000
-Name: Namibia, dtype: float64"
-Madagascar,"0    0.000294
-1    0.000488
-2    0.000407
+Name: Cambodia, dtype: float64"
+Libyan Arab Jamahiriya,"0    0.000665
+1    0.000000
+2    0.000590
 3    0.000000
 4    0.000000
-5    0.000317
-Name: Madagascar, dtype: float64"
-Burkina Faso,"0    0.000294
-1    0.000000
-2    0.000000
-3    0.000359
-4    0.000212
-5    0.000635
-Name: Burkina Faso, dtype: float64"
-Brunei Darussalam,"0    0.000000
-1    0.000000
-2    0.000611
-3    0.000538
-4    0.000000
-5    0.000317
-Name: Brunei Darussalam, dtype: float64"
-Puerto Rico,"0    0.000000
-1    0.000244
-2    0.000000
-3    0.000359
-4    0.000212
-5    0.000635
-Name: Puerto Rico, dtype: float64"
-Libyan Arab Jamahiriya,"0    0.000294
-1    0.000000
-2    0.000204
-3    0.000359
-4    0.000000
-5    0.000317
+5    0.000788
 Name: Libyan Arab Jamahiriya, dtype: float64"
-Rwanda,"0    0.000294
-1    0.000244
-2    0.000204
+Puerto Rico,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000550
+5    0.000788
+Name: Puerto Rico, dtype: float64"
+Rwanda,"0    0.000665
+1    0.000000
+2    0.000590
 3    0.000000
-4    0.000425
+4    0.000550
 5    0.000000
 Name: Rwanda, dtype: float64"
-Mongolia,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000359
-4    0.000212
-5    0.000317
-Name: Mongolia, dtype: float64"
-Zambia,"0    0.000294
-1    0.000000
-2    0.000204
-3    0.000359
-4    0.000212
-5    0.000000
-Name: Zambia, dtype: float64"
-Myanmar,"0    0.000000
+Uzbekistan,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000717
+3    0.000934
 4    0.000000
-5    0.000317
-Name: Myanmar, dtype: float64"
-Mozambique,"0    0.000294
+5    0.000788
+Name: Uzbekistan, dtype: float64"
+Uruguay,"0    0.000665
 1    0.000000
 2    0.000000
-3    0.000179
-4    0.000212
-5    0.000317
-Name: Mozambique, dtype: float64"
-Armenia,"0    0.000294
-1    0.000488
-2    0.000204
-3    0.000000
+3    0.000934
 4    0.000000
 5    0.000000
-Name: Armenia, dtype: float64"
-Belarus,"0    0.000000
-1    0.000488
-2    0.000000
-3    0.000179
-4    0.000000
-5    0.000317
-Name: Belarus, dtype: float64"
-Malta,"0    0.000588
-1    0.000000
-2    0.000204
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Malta, dtype: float64"
-Malawi,"0    0.000588
-1    0.000000
-2    0.000204
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Malawi, dtype: float64"
-North Korea,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000538
-4    0.000425
-5    0.000000
-Name: North Korea, dtype: float64"
-Swaziland,"0    0.000294
-1    0.000488
-2    0.000000
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Swaziland, dtype: float64"
-New Caledonia,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000000
-4    0.000425
-5    0.000317
-Name: New Caledonia, dtype: float64"
-Togo,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000635
-Name: Togo, dtype: float64"
-Bulgaria,"0    0.000000
-1    0.000244
-2    0.000407
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Bulgaria, dtype: float64"
-Afghanistan,"0    0.000000
-1    0.000244
-2    0.000204
-3    0.000359
-4    0.000000
-5    0.000000
-Name: Afghanistan, dtype: float64"
-Syrian Arab Republic,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000359
-4    0.000212
-5    0.000000
-Name: Syrian Arab Republic, dtype: float64"
-Yemen,"0    0.000000
-1    0.000244
-2    0.000204
-3    0.000000
-4    0.000000
-5    0.000317
-Name: Yemen, dtype: float64"
-Mali,"0    0.000294
-1    0.000244
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Mali, dtype: float64"
-Guam,"0    0.000294
-1    0.000244
-2    0.000204
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Guam, dtype: float64"
-Sierra Leone,"0    0.000000
-1    0.000244
-2    0.000000
-3    0.000179
-4    0.000212
-5    0.000000
-Name: Sierra Leone, dtype: float64"
-Guatemala,"0    0.000000
-1    0.000000
-2    0.000407
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Guatemala, dtype: float64"
+Name: Uruguay, dtype: float64"
 Bahrain,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000179
-4    0.000425
+3    0.000467
+4    0.001101
 5    0.000000
 Name: Bahrain, dtype: float64"
-Macedonia,"0    0.000000
+New Caledonia,"0    0.000000
 1    0.000000
 2    0.000000
 3    0.000000
-4    0.000212
-5    0.000317
-Name: Macedonia, dtype: float64"
-Bosnia and Herzegovina,"0    0.000294
+4    0.000550
+5    0.000788
+Name: New Caledonia, dtype: float64"
+Namibia,"0    0.00133
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Namibia, dtype: float64"
+Belarus,"0    0.000000
 1    0.000000
-2    0.000204
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000788
+Name: Belarus, dtype: float64"
+Palestine,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000788
+Name: Palestine, dtype: float64"
+Myanmar,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000788
+Name: Myanmar, dtype: float64"
+Burkina Faso,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000788
+Name: Burkina Faso, dtype: float64"
+Bosnia and Herzegovina,"0    0.000665
+1    0.000000
+2    0.000590
 3    0.000000
 4    0.000000
 5    0.000000
 Name: Bosnia and Herzegovina, dtype: float64"
-Panama,"0    0.000000
-1    0.000244
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Panama, dtype: float64"
-Mauritius,"0    0.000000
+Mali,"0    0.000665
 1    0.000000
 2    0.000000
 3    0.000000
-4    0.000425
+4    0.000550
 5    0.000000
-Name: Mauritius, dtype: float64"
-Seychelles,"0    0.000000
-1    0.000000
-2    0.000204
+Name: Mali, dtype: float64"
+Sierra Leone,"0    0.000000
+1    0.000635
+2    0.000000
 3    0.000000
-4    0.000212
+4    0.000550
 5    0.000000
+Name: Sierra Leone, dtype: float64"
+Bulgaria,"0    0.00000
+1    0.00000
+2    0.00118
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Bulgaria, dtype: float64"
+Seychelles,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00055
+5    0.00000
 Name: Seychelles, dtype: float64"
-Trinidad and Tobago,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Trinidad and Tobago, dtype: float64"
-Haiti,"0    0.000000
+Zambia,"0    0.000665
 1    0.000000
 2    0.000000
-3    0.000179
-4    0.000212
+3    0.000467
+4    0.000000
 5    0.000000
-Name: Haiti, dtype: float64"
-Bhutan,"0    0.000000
+Name: Zambia, dtype: float64"
+Mongolia,"0    0.000000
+1    0.000000
+2    0.000590
+3    0.000467
+4    0.000000
+5    0.000000
+Name: Mongolia, dtype: float64"
+Afghanistan,"0    0.000000
+1    0.000000
+2    0.000590
+3    0.000467
+4    0.000000
+5    0.000000
+Name: Afghanistan, dtype: float64"
+Bolivia,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000179
-4    0.000212
+3    0.000467
+4    0.000550
 5    0.000000
-Name: Bhutan, dtype: float64"
-Honduras,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Honduras, dtype: float64"
-Paraguay,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000179
-4    0.000000
-5    0.000000
-Name: Paraguay, dtype: float64"
-Chad,"0    0.000000
+Name: Bolivia, dtype: float64"
+Mozambique,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000359
-4    0.000000
+3    0.000467
+4    0.000550
 5    0.000000
-Name: Chad, dtype: float64"
-Kyrgyzstan,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000317
-Name: Kyrgyzstan, dtype: float64"
+Name: Mozambique, dtype: float64"
 Djibouti,"0    0.000000
 1    0.000000
 2    0.000000
 3    0.000000
 4    0.000000
-5    0.000317
+5    0.000788
 Name: Djibouti, dtype: float64"
 Monaco,"0    0.000000
 1    0.000000
 2    0.000000
 3    0.000000
 4    0.000000
-5    0.000317
+5    0.000788
 Name: Monaco, dtype: float64"
-Albania,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000317
-Name: Albania, dtype: float64"
-French Guiana,"0    0.000294
+Malawi,"0    0.000665
 1    0.000000
 2    0.000000
 3    0.000000
 4    0.000000
 5    0.000000
-Name: French Guiana, dtype: float64"
-Venezuela,"0    0.000294
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Venezuela, dtype: float64"
-Greenland,"0    0.000294
+Name: Malawi, dtype: float64"
+Greenland,"0    0.000665
 1    0.000000
 2    0.000000
 3    0.000000
 4    0.000000
 5    0.000000
 Name: Greenland, dtype: float64"
-Virgin Islands (U.S.),"0    0.000294
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Virgin Islands (U.S.), dtype: float64"
-Federated States of Micronesia,"0    0.000294
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Federated States of Micronesia, dtype: float64"
 Eritrea,"0    0.000000
-1    0.000244
+1    0.000635
 2    0.000000
 3    0.000000
 4    0.000000
 5    0.000000
 Name: Eritrea, dtype: float64"
-Sao Tome and Principe,"0    0.000000
-1    0.000244
-2    0.000000
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Sao Tome and Principe, dtype: float64"
-Lesotho,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Lesotho, dtype: float64"
-Azerbaijan,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Azerbaijan, dtype: float64"
-Nicaragua,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
-Name: Nicaragua, dtype: float64"
-Bahamas,"0    0.000000
-1    0.000000
-2    0.000000
-3    0.000000
-4    0.000212
-5    0.000000
+Guatemala,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Guatemala, dtype: float64"
+Trinidad and Tobago,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Trinidad and Tobago, dtype: float64"
+Madagascar,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Madagascar, dtype: float64"
+Guam,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Guam, dtype: float64"
+Malta,"0    0.00000
+1    0.00000
+2    0.00059
+3    0.00000
+4    0.00000
+5    0.00000
+Name: Malta, dtype: float64"
+North Korea,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: North Korea, dtype: float64"
+Mauritius,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: Mauritius, dtype: float64"
+Haiti,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: Haiti, dtype: float64"
+Bahamas,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
 Name: Bahamas, dtype: float64"
-French Polynesia,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000000
-4    0.000000
-5    0.000000
-Name: French Polynesia, dtype: float64"
-Moldova,"0    0.000000
-1    0.000000
-2    0.000204
-3    0.000000
-4    0.000000
-5    0.000000
-Name: Moldova, dtype: float64"
-Turkmenistan,"0    0.000000
+Panama,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: Panama, dtype: float64"
+Macedonia,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: Macedonia, dtype: float64"
+Lesotho,"0    0.00000
+1    0.00000
+2    0.00000
+3    0.00000
+4    0.00055
+5    0.00000
+Name: Lesotho, dtype: float64"
+Chad,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000179
+3    0.000467
 4    0.000000
 5    0.000000
-Name: Turkmenistan, dtype: float64"
+Name: Chad, dtype: float64"
+Bhutan,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000000
+Name: Bhutan, dtype: float64"
+Paraguay,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000000
+Name: Paraguay, dtype: float64"
 Tajikistan,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000179
+3    0.000467
 4    0.000000
 5    0.000000
 Name: Tajikistan, dtype: float64"
-Barbados,"0    0.000000
+Brunei Darussalam,"0    0.000000
 1    0.000000
 2    0.000000
-3    0.000179
+3    0.000467
 4    0.000000
 5    0.000000
-Name: Barbados, dtype: float64"
+Name: Brunei Darussalam, dtype: float64"
+Turkmenistan,"0    0.000000
+1    0.000000
+2    0.000000
+3    0.000467
+4    0.000000
+5    0.000000
+Name: Turkmenistan, dtype: float64"
+Federated States of Micronesia,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Federated States of Micronesia, dtype: float64"
+Venezuela,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Venezuela, dtype: float64"
+Kyrgyzstan,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Kyrgyzstan, dtype: float64"
+French Polynesia,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: French Polynesia, dtype: float64"
 Romania,"0    0.0
 1    0.0
 2    0.0
@@ -1133,3 +1028,108 @@ Congo,"0    0.0
 4    0.0
 5    0.0
 Name: Congo, dtype: float64"
+Sao Tome and Principe,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Sao Tome and Principe, dtype: float64"
+Togo,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Togo, dtype: float64"
+Azerbaijan,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Azerbaijan, dtype: float64"
+Albania,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Albania, dtype: float64"
+Syrian Arab Republic,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Syrian Arab Republic, dtype: float64"
+Cuba,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Cuba, dtype: float64"
+Virgin Islands (U.S.),"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Virgin Islands (U.S.), dtype: float64"
+Barbados,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Barbados, dtype: float64"
+Nicaragua,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Nicaragua, dtype: float64"
+French Guiana,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: French Guiana, dtype: float64"
+Armenia,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Armenia, dtype: float64"
+Moldova,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Moldova, dtype: float64"
+Yemen,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Yemen, dtype: float64"
+Honduras,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Honduras, dtype: float64"
+Swaziland,"0    0.0
+1    0.0
+2    0.0
+3    0.0
+4    0.0
+5    0.0
+Name: Swaziland, dtype: float64"
