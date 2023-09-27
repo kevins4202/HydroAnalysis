@@ -1,0 +1,29 @@
+,Hydrological modeling for flood estimation; spatial analysis on rainfall variability,Simulation-Based Analysis; Uncertainty and Error Estimation,Data driven modelling and prediction using machine learning; forecasting performance through algorithmic optimization,Groundwater and surface water quality analysis; temporal variability and seasonal trends in water quality,Soil moisture estimation and vegetation cover; modelling and analysis of soil moisture,Agricultural impact of soi moisture and irrigation; modelling f climate change on crop yield and soil water content,Data driven hydrologic modelling; tools for hydrologic data analysis and visualization,Water treatment and contaminant removal; effectiveness of treatment processes on chemical contaminant removals,"Sediment transport and erosion modelling in river catchments, hydrology flow, channel morphology in river networks","Ecological and economic impacts on water management, assessment of environmental changes",Hydrodynamic forces and surface effects on maritime structures; pressure and stress analysis on maritime flow effects,Coastal wave and wind interactions; oceanic wave spectrum analysis,Remote sensing and image processing for geospatial analysis; geological factors and hydrogeological considerations on groundwater flow and lithological characteristics,Reservoir operation and hydropower management strategies; multi-agent decision-making for cascading reservoir systems,Isotopic composition and source of precipitation; isotope-based study of monsoon dynamics and moisture recycling,Aquatic habitats and thermal dynamics in tidal zones; karst aquifers and aquatic assemblages in springs
+AI and Machine Learning,3533.0,863.0,54373.0,8380.0,407.0,3583.0,324.0,292.0,1062.0,0.0001,39.0,1075.0,440.0,464.0,0.0001,0.0001
+Big Data,107.0,22.0,2572.0,288.0,23.0,112.0,875.0,15.0,44.0,0.0001,16.0,27.0,31.0,6.0,0.0001,0.0001
+Blockchain and Cryptocurrency,0.0001,0.0001,78.0,13.0,0.0001,1.0,1.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+IoT,10.0,145.0,504.0,176.0,0.0001,44.0,86.0,26.0,1.0,0.0001,0.0001,1.0,0.0001,4.0,0.0001,0.0001
+AR and VR,0.0001,4.0,147.0,30.0,0.0001,0.0001,23.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+Cybersecurity,28.0,20.0,353.0,90.0,0.0001,14.0,66.0,7.0,7.0,0.0001,0.0001,5.0,14.0,5.0,0.0001,0.0001
+Automation,6.0,85.0,242.0,61.0,4.0,12.0,26.0,1.0,1.0,0.0001,1.0,1.0,0.0001,1.0,0.0001,0.0001
+NLP,1.0,7.0,330.0,1.0,0.0001,0.0001,37.0,0.0001,0.0001,0.0001,4.0,0.0001,52.0,8.0,0.0001,0.0001
+Quantum Computing,1.0,2.0,75.0,8.0,0.0001,0.0001,0.0001,2.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+5G,24.0,8.0,529.0,40.0,0.0001,20.0,27.0,0.0001,0.0001,0.0001,0.0001,15.0,1.0,1.0,0.0001,0.0001
+Edge Computing,2.0,2.0,184.0,25.0,0.0001,7.0,24.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,1.0,0.0001,0.0001
+Data Analytics,173.0,36.0,2624.0,816.0,24.0,267.0,783.0,89.0,66.0,0.0001,1.0,67.0,33.0,22.0,0.0001,0.0001
+Biotechnology,1.0,1.0,302.0,76.0,0.0001,7.0,12.0,28.0,4.0,0.0001,1.0,1.0,10.0,0.0001,0.0001,0.0001
+Nanotechnology,0.0001,0.0001,68.0,10.0,0.0001,0.0001,0.0001,13.0,1.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+Wearable Technology,0.0001,5.0,71.0,0.0001,0.0001,0.0001,11.0,0.0001,0.0001,0.0001,3.0,11.0,0.0001,0.0001,0.0001,0.0001
+Voice User Interface (VUI),4.0,0.0001,124.0,17.0,0.0001,0.0001,13.0,0.0001,0.0001,0.0001,0.0001,7.0,2.0,1.0,0.0001,0.0001
+FinTech,0.0001,0.0001,11.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+Data Mining,577.0,238.0,15275.0,1101.0,19.0,275.0,351.0,46.0,131.0,0.0001,0.0001,177.0,86.0,118.0,0.0001,0.0001
+Predictive Analysis,82.0,24.0,1217.0,169.0,2.0,42.0,142.0,8.0,11.0,0.0001,0.0001,13.0,6.0,10.0,0.0001,0.0001
+Chatbots,12.0,7.0,1764.0,34.0,0.0001,2.0,41.0,0.0001,5.0,0.0001,4.0,11.0,16.0,19.0,0.0001,0.0001
+3D Printing,0.0001,15.0,161.0,21.0,0.0001,1.0,2.0,0.0001,0.0001,0.0001,2.0,0.0001,0.0001,0.0001,0.0001,0.0001
+Smart Cities,199.0,9.0,1408.0,836.0,17.0,399.0,140.0,16.0,22.0,0.0001,0.0001,25.0,16.0,27.0,0.0001,0.0001
+Regtech,0.0001,0.0001,24.0,6.0,0.0001,1.0,3.0,1.0,1.0,0.0001,0.0001,4.0,0.0001,0.0001,0.0001,0.0001
+Insurtech,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+E-Commerce,0.0001,0.0001,42.0,4.0,0.0001,2.0,17.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001
+Serverless Computing,1.0,3.0,139.0,12.0,0.0001,0.0001,36.0,0.0001,0.0001,0.0001,0.0001,0.0001,0.0001,1.0,0.0001,0.0001
+Software/Platform/Infrastructure as a Service/Cloud Computing,11.0,1.0,237.0,21.0,0.0001,2.0,116.0,0.0001,0.0001,0.0001,0.0001,4.0,0.0001,3.0,0.0001,0.0001
+Web Applications,56.0,4.0,969.0,116.0,0.0001,29.0,703.0,0.0001,18.0,0.0001,0.0001,9.0,4.0,3.0,0.0001,0.0001
